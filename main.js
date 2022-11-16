@@ -5,7 +5,7 @@ const path = require('path')
 
 function createWindow () {
 
-	const url = "https://xc.haomooc.com/index.php?c=page&id=21";
+	const url = "https://haomooc.com/index.php?c=page&id=21";
 	const appName = "福岭五侯山";
 
 	// Create the browser window.
@@ -45,7 +45,7 @@ function createWindow () {
 
 let mainInstance = app.requestSingleInstanceLock()
 if (!mainInstance) {
-  app.quit()
+	app.quit()
 }
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

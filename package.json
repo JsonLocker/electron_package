@@ -1,12 +1,31 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "devDependencies": {
-    "@electron-forge/cli": "^6.0.3",
-    "electron": "^21.2.3"
-  }
+	"name": "haomooc",
+	"version": "1.0.0",
+	"description": "A minimal Electron application",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron-forge start",
+		"pack": "electron-packager ./ my-package --win32 --out=package --electron-version 21.2.3 --overwrite --icon=./peixunjidi.ico",
+		"package": "electron-forge package",
+		"make": "electron-forge make"
+	},
+	"repository": "https://github.com/electron/electron-quick-start",
+	"keywords": [
+		"乡村云振兴",
+		"好慕课"
+	],
+	"author": "GitHub",
+	"license": "CC0-1.0",
+	"devDependencies": {
+		"@electron-forge/cli": "^6.0.3",
+		"@electron-forge/maker-deb": "^6.0.3",
+		"@electron-forge/maker-rpm": "^6.0.3",
+		"@electron-forge/maker-squirrel": "^6.0.3",
+		"@electron-forge/maker-zip": "^6.0.3",
+		"electron": "^21.2.3"
+	},
+	"dependencies": {
+		"electron-squirrel-startup": "^1.0.0"
+	}
+	
 }
