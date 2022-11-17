@@ -1,6 +1,6 @@
 {
 	"name": "yinong",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "益农直通车",
 	"main": "main.js",
 	"scripts": {
@@ -12,18 +12,24 @@
 		"乡村云振兴",
 		"好慕课"
 	],
-	"author": "福建好慕课科技有限公司",
+	"author": "福建好慕课科技",
 	"license": "CC0-1.0",
 	"devDependencies": {
 		"electron": "^21.2.3",
 		"electron-builder": "^23.6.0"
 	},
 	"dependencies": {
-		"electron-squirrel-startup": "^1.0.0"
+		"electron-updater": "^5.3.0"
 	},
-	"build" : {
-		"productName": "益农直通车", 
-		"copyright":"Copyright © 2022 ${author}",
+	"build": {
+		"productName": "益农直通车",
+		"copyright": "Copyright © 2022 ${author}",
+		"publish": [
+			{
+				"provider": "generic",
+				"url": "https://haomooc.com/uploads/desktop_app/yinong"
+			}
+		],
 		"nsis": {
 			"oneClick": false,
 			"allowElevation": true,
@@ -31,10 +37,12 @@
 			"createDesktopShortcut": true,
 			"createStartMenuShortcut": true,
 			"shortcutName": "益农直通车"
-		  },
-		"win": {  
-			"target": ["nsis"],
-        	"icon": "zhenxing.ico"
+		},
+		"win": {
+			"target": [
+				"nsis"
+			],
+			"icon": "zhenxing.ico"
 		}
 	}
 }

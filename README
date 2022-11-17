@@ -13,13 +13,25 @@
     - 1. `url`  跳转链接
     - 2. `appName` 软件名
     - 3. 调整自动启动 `openAtLogin`
+    - 4. `updateUrl` 自动更新链接
 
 2. 修改 `package.json`文件
     - 1. `name` 打包路径目录名
     - 2. `productName` exe名
     - 3. `shortcutName` 桌面快捷图标
     - 4. `icon` 图标
+    - 5. `url` 修改更新链接
+    - 6. `version` 版本号
+
+    
 
 #### 运行打包
 
 运行 `npm run dist`
+
+
+#### 更新
+
+1. 改变package.json中的version属性, 例如：改为 `version: "1.0.1"` (之前为1.0.0) 
+2. 再次执行electron-builder打包, 将新版本latest.yml文件和exe文件放到package.json中`build -> publish`中的url对应的地址下
+3. 在应用中触发更新检查, `electron-updater`自动会通过对应url下的yml文件检查更新
