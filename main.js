@@ -3,6 +3,11 @@ const {app, BrowserWindow,Menu} = require('electron')
 const path = require('path')
 
 
+//开机自启动
+app.setLoginItemSettings({
+	openAtLogin: true,
+})
+
 function createWindow () {
 
 	const url = "https://haomooc.com/index.php?c=page&id=21";
