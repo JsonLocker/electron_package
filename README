@@ -1,0 +1,24 @@
+基于Electron生成window打包exe
+
+#### 大概说明如下
+
+- [x] 自动启动
+- [x] 版权信息配置
+- [x] 自定义图标配置
+- [x] 自定义安装目录
+
+#### 修改位置如下:
+
+1. 修改`main.js` 文件
+    - 1. `url`  跳转链接
+    - 2. `appName` 软件名
+
+2. 修改 `package.json`文件
+    - 1. `name` 打包路径目录名
+    - 2. `productName` exe名
+    - 3. `shortcutName` 桌面快捷图标
+    - 4. `icon` 图标
+
+#### 运行打包
+
+运行 `npm run dist`

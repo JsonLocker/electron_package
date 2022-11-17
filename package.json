@@ -33,7 +33,7 @@
 			"shortcutName": "福岭五侯山"
 		  },
 		"win": {  
-			"target": ["nsis","zip"],
+			"target": ["nsis"],
         	"icon": "peixunjidi.ico"
 		}
 	}
