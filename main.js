@@ -5,13 +5,13 @@ const path = require('path')
 
 //开机自启动
 app.setLoginItemSettings({
-	openAtLogin: true,
+	openAtLogin: false,
 })
 
 function createWindow () {
 
-	const url = "https://haomooc.com/index.php?c=page&id=21";
-	const appName = "福岭五侯山";
+	const url = "https://haomooc.com/index.php?c=page&id=15";
+	const appName = "益农直通车";
 
 	// Create the browser window.
 	const mainWindow = new BrowserWindow({

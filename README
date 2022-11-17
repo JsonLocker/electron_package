@@ -12,6 +12,7 @@
 1. 修改`main.js` 文件
     - 1. `url`  跳转链接
     - 2. `appName` 软件名
+    - 3. 调整自动启动 `openAtLogin`
 
 2. 修改 `package.json`文件
     - 1. `name` 打包路径目录名
